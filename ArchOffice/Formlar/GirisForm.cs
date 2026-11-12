@@ -46,7 +46,19 @@ namespace ArchOffice.Formlar
             }
 
             lblHata.Text = "";
-            MessageBox.Show("Hoş geldiniz, " + tablo.Rows[0]["AdSoyad"] + " (" + tablo.Rows[0]["Rol"] + ")");
+            string rol = tablo.Rows[0]["Rol"].ToString();
+            if (rol == "Yönetici")
+            {
+                txtSifre.Text = "";
+                Hide();
+                new YoneticiForm().ShowDialog();
+                Show();
+            }
+            else
+            {
+                MessageBox.Show("Hoş geldiniz, " + tablo.Rows[0]["AdSoyad"] + " (" + rol + ")");
+            }
+            
         }
 
         private void btnUyeOl_Click(object sender, EventArgs e)
