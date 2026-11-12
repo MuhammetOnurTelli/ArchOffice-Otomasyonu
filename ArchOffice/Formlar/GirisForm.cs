@@ -1,0 +1,57 @@
+﻿using System;
+using System.Data.SQLite;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ArchOffice.Formlar
+{
+    public partial class GirisForm : Form
+    {
+        public GirisForm()
+        {
+            InitializeComponent();
+        }
+
+        private void GirisForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGiris_Click(object sender, EventArgs e)
+        {
+            string kullanici = txtKullaniciAdi.Text.Trim();
+            string sifre = txtSifre.Text;
+
+            if (kullanici == "" || sifre == "")
+            {
+                lblHata.Text = "Kullanıcı adı ve şifre boş olamaz.";
+                return;
+            }
+
+            var tablo = Veriler.Getir(
+                "SELECT Id, Rol, AdSoyad FROM Kullanicilar WHERE KullaniciAdi = @k AND SifreHash = @s AND Aktif = 1",
+                new SQLiteParameter("@k", kullanici),
+                new SQLiteParameter("@s", Sifreleme.Hashle(sifre)));
+
+            if (tablo.Rows.Count == 0)
+            {
+                lblHata.Text = "Kullanıcı adı veya şifre hatalı.";
+                return;
+            }
+
+            lblHata.Text = "";
+            MessageBox.Show("Hoş geldiniz, " + tablo.Rows[0]["AdSoyad"] + " (" + tablo.Rows[0]["Rol"] + ")");
+        }
+
+        private void btnUyeOl_Click(object sender, EventArgs e)
+        {
+            new UyeOlForm().ShowDialog();
+        }
+    }
+}

@@ -50,5 +50,17 @@ namespace ArchOffice
             }
             return tablo;
         }
+        public static void VarsayilanYoneticiEkle()
+        {
+            var var = Getir("SELECT Id FROM Kullanicilar WHERE Rol = @rol",
+                new SQLiteParameter("@rol", "Yönetici"));
+            if (var.Rows.Count > 0) return;
+
+            Calistir("INSERT INTO Kullanicilar (KullaniciAdi, SifreHash, Rol, AdSoyad, Aktif) VALUES (@k, @s, @r, @a, 1)",
+                new SQLiteParameter("@k", "admin"),
+                new SQLiteParameter("@s", Sifreleme.Hashle("admin123")),
+                new SQLiteParameter("@r", "Yönetici"),
+                new SQLiteParameter("@a", "Sistem Yöneticisi"));
+        }
     }
 }
