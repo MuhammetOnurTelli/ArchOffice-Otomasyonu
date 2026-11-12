@@ -16,6 +16,7 @@ namespace ArchOffice
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            VeritabaniKurulum.Hazirla();
             Application.Run(new Form1());
         }
     }
