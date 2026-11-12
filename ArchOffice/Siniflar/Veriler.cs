@@ -62,5 +62,9 @@ namespace ArchOffice
                 new SQLiteParameter("@r", "Yönetici"),
                 new SQLiteParameter("@a", "Sistem Yöneticisi"));
         }
+        public static void EksikMusterileriEkle()
+        {
+            Calistir("INSERT INTO Musteriler (KullaniciId) SELECT Id FROM Kullanicilar WHERE Rol = 'Müşteri' AND Id NOT IN (SELECT KullaniciId FROM Musteriler)");
+        }
     }
 }

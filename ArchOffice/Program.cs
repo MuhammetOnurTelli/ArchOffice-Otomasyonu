@@ -18,6 +18,7 @@ namespace ArchOffice
             Application.SetCompatibleTextRenderingDefault(false);
             VeritabaniKurulum.Hazirla();
             Veriler.VarsayilanYoneticiEkle();
+            Veriler.EksikMusterileriEkle();
             Application.Run(new Formlar.GirisForm());
         }
     }

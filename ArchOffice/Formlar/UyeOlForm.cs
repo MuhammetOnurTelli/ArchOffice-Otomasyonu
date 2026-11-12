@@ -85,6 +85,11 @@ namespace ArchOffice.Formlar
                 new SQLiteParameter("@t", txtTelefon.Text.Trim()),
                 new SQLiteParameter("@e", txtEmail.Text.Trim()));
 
+            var yeni = Veriler.Getir("SELECT Id FROM Kullanicilar WHERE KullaniciAdi = @k",
+    new SQLiteParameter("@k", kullanici));
+            Veriler.Calistir("INSERT INTO Musteriler (KullaniciId) VALUES (@id)",
+                new SQLiteParameter("@id", Convert.ToInt32(yeni.Rows[0]["Id"])));
+
             MessageBox.Show("Kayıt başarılı. Şimdi giriş yapabilirsiniz.");
             Close();
         }

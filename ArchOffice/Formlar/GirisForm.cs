@@ -47,6 +47,10 @@ namespace ArchOffice.Formlar
 
             lblHata.Text = "";
             string rol = tablo.Rows[0]["Rol"].ToString();
+            CurrentUser.Id = Convert.ToInt32(tablo.Rows[0]["Id"]);
+            CurrentUser.KullaniciAdi = kullanici;
+            CurrentUser.AdSoyad = tablo.Rows[0]["AdSoyad"].ToString();
+            CurrentUser.Rol = rol;
             if (rol == "Yönetici")
             {
                 txtSifre.Text = "";
@@ -56,7 +60,17 @@ namespace ArchOffice.Formlar
             }
             else
             {
-                MessageBox.Show("Hoş geldiniz, " + tablo.Rows[0]["AdSoyad"] + " (" + rol + ")");
+                                if (rol == "Müşteri")
+                {
+                    txtSifre.Text = "";
+                    Hide();
+                    new MusteriForm().ShowDialog();
+                    Show();
+                }
+                else
+                {
+                    MessageBox.Show("Hoş geldiniz, " + CurrentUser.AdSoyad + " (" + rol + ")");
+                }
             }
             
         }
