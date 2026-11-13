@@ -33,6 +33,7 @@
             this.btnYenile = new System.Windows.Forms.Button();
             this.btnCikis = new System.Windows.Forms.Button();
             this.btnAsamalar = new System.Windows.Forms.Button();
+            this.btnGorevler = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProjeler)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,11 +87,22 @@
             this.btnAsamalar.UseVisualStyleBackColor = true;
             this.btnAsamalar.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnGorevler
+            // 
+            this.btnGorevler.Location = new System.Drawing.Point(402, 410);
+            this.btnGorevler.Name = "btnGorevler";
+            this.btnGorevler.Size = new System.Drawing.Size(110, 30);
+            this.btnGorevler.TabIndex = 5;
+            this.btnGorevler.Text = "Görevler";
+            this.btnGorevler.UseVisualStyleBackColor = true;
+            this.btnGorevler.Click += new System.EventHandler(this.btnGorevler_Click);
+            // 
             // MimarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnGorevler);
             this.Controls.Add(this.btnAsamalar);
             this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.btnYenile);
@@ -114,5 +126,6 @@
         private System.Windows.Forms.Button btnYenile;
         private System.Windows.Forms.Button btnCikis;
         private System.Windows.Forms.Button btnAsamalar;
+        private System.Windows.Forms.Button btnGorevler;
     }
 }

@@ -57,5 +57,17 @@ namespace ArchOffice.Formlar
             int projeId = Convert.ToInt32(dgvProjeler.CurrentRow.Cells["Id"].Value);
             new AsamaForm(projeId).ShowDialog();
         }
+
+        private void btnGorevler_Click(object sender, EventArgs e)
+        {
+            if (dgvProjeler.CurrentRow == null)
+            {
+                MessageBox.Show("Önce bir proje seçin.");
+                return;
+            }
+
+            int projeId = Convert.ToInt32(dgvProjeler.CurrentRow.Cells["Id"].Value);
+            new GorevForm(projeId).ShowDialog();
+        }
     }
 }
