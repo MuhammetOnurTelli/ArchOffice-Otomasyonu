@@ -55,5 +55,10 @@ namespace ArchOffice.Formlar
         {
             new YoneticiProjeForm().ShowDialog();
         }
+
+        private void btnRapolar_Click(object sender, EventArgs e)
+        {
+            new RaporForm().ShowDialog();
+        }
     }
 }
