@@ -67,6 +67,13 @@ namespace ArchOffice.Formlar
                     new MusteriForm().ShowDialog();
                     Show();
                 }
+                else if (rol == "Mimar")
+                {
+                    txtSifre.Text = "";
+                    Hide();
+                    new MimarForm().ShowDialog();
+                    Show();
+                }
                 else
                 {
                     MessageBox.Show("Hoş geldiniz, " + CurrentUser.AdSoyad + " (" + rol + ")");

@@ -51,16 +51,18 @@ namespace ArchOffice.Formlar
         private void YoneticiProjeForm_Load(object sender, EventArgs e)
         {
             ProjeleriYukle();
+            MimarlariYukle();
         }
 
         private void ProjeleriYukle()
         {
             dgvProjeler.DataSource = Veriler.Getir(
-                @"SELECT p.Id, p.Ad, u.AdSoyad AS Musteri, p.Tur,
-                 p.Alan_m2, p.Butce, p.Durum
+                @"SELECT p.Id, p.Ad, u.AdSoyad AS Musteri, ma.AdSoyad AS Mimar,
+                 p.Tur, p.Alan_m2, p.Butce, p.Durum
           FROM Projeler p
           JOIN Musteriler m ON p.MusteriId = m.Id
           JOIN Kullanicilar u ON m.KullaniciId = u.Id
+          LEFT JOIN Kullanicilar ma ON p.MimarId = ma.Id
           ORDER BY p.Id DESC");
         }
 
@@ -71,6 +73,34 @@ namespace ArchOffice.Formlar
 
         private void btnYenile_Click(object sender, EventArgs e)
         {
+            ProjeleriYukle();
+        }
+        private void MimarlariYukle()
+        {
+            DataTable dt = Veriler.Getir(
+                "SELECT Id, AdSoyad FROM Kullanicilar WHERE Rol = 'Mimar' AND Aktif = 1");
+            cmbMimar.DataSource = dt;
+            cmbMimar.DisplayMember = "AdSoyad";
+            cmbMimar.ValueMember = "Id";
+        }
+
+        private void btnMimarAta_Click(object sender, EventArgs e)
+        {
+            if (dgvProjeler.CurrentRow == null || cmbMimar.SelectedValue == null)
+            {
+                MessageBox.Show("Önce bir proje ve bir mimar seçin.");
+                return;
+            }
+
+            int projeId = Convert.ToInt32(dgvProjeler.CurrentRow.Cells["Id"].Value);
+            int mimarId = Convert.ToInt32(cmbMimar.SelectedValue);
+
+            Veriler.Calistir(
+                "UPDATE Projeler SET MimarId = @mimar WHERE Id = @id",
+                new SQLiteParameter("@mimar", mimarId),
+                new SQLiteParameter("@id", projeId));
+
+            MessageBox.Show("Mimar atandı.");
             ProjeleriYukle();
         }
     }

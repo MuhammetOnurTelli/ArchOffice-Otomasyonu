@@ -63,6 +63,12 @@
     <Compile Include="Formlar\GirisForm.Designer.cs">
       <DependentUpon>GirisForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\MimarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\MimarForm.Designer.cs">
+      <DependentUpon>MimarForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\MusteriForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     <Compile Include="Siniflar\VeritabaniKurulum.cs" />
     <EmbeddedResource Include="Formlar\GirisForm.resx">
       <DependentUpon>GirisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\MimarForm.resx">
+      <DependentUpon>MimarForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\MusteriForm.resx">
       <DependentUpon>MusteriForm.cs</DependentUpon>

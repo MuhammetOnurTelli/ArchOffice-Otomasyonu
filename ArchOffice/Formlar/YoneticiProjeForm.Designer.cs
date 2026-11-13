@@ -33,6 +33,8 @@
             this.btnOnayla = new System.Windows.Forms.Button();
             this.btnReddet = new System.Windows.Forms.Button();
             this.btnYenile = new System.Windows.Forms.Button();
+            this.cmbMimar = new System.Windows.Forms.ComboBox();
+            this.btnMimarAta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProjeler)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,11 +90,32 @@
             this.btnYenile.UseVisualStyleBackColor = true;
             this.btnYenile.Click += new System.EventHandler(this.btnYenile_Click);
             // 
+            // cmbMimar
+            // 
+            this.cmbMimar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMimar.FormattingEnabled = true;
+            this.cmbMimar.Location = new System.Drawing.Point(380, 433);
+            this.cmbMimar.Name = "cmbMimar";
+            this.cmbMimar.Size = new System.Drawing.Size(180, 21);
+            this.cmbMimar.TabIndex = 5;
+            // 
+            // btnMimarAta
+            // 
+            this.btnMimarAta.Location = new System.Drawing.Point(570, 430);
+            this.btnMimarAta.Name = "btnMimarAta";
+            this.btnMimarAta.Size = new System.Drawing.Size(110, 30);
+            this.btnMimarAta.TabIndex = 6;
+            this.btnMimarAta.Text = "Mimar Ata";
+            this.btnMimarAta.UseVisualStyleBackColor = true;
+            this.btnMimarAta.Click += new System.EventHandler(this.btnMimarAta_Click);
+            // 
             // YoneticiProjeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 481);
+            this.Controls.Add(this.btnMimarAta);
+            this.Controls.Add(this.cmbMimar);
             this.Controls.Add(this.btnYenile);
             this.Controls.Add(this.btnReddet);
             this.Controls.Add(this.btnOnayla);
@@ -116,5 +139,7 @@
         private System.Windows.Forms.Button btnOnayla;
         private System.Windows.Forms.Button btnReddet;
         private System.Windows.Forms.Button btnYenile;
+        private System.Windows.Forms.ComboBox cmbMimar;
+        private System.Windows.Forms.Button btnMimarAta;
     }
 }

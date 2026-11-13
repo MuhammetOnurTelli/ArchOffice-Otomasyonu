@@ -66,5 +66,20 @@ namespace ArchOffice
         {
             Calistir("INSERT INTO Musteriler (KullaniciId) SELECT Id FROM Kullanicilar WHERE Rol = 'Müşteri' AND Id NOT IN (SELECT KullaniciId FROM Musteriler)");
         }
+        public static void VarsayilanMimarEkle()
+        {
+            DataTable dt = Getir(
+                "SELECT Id FROM Kullanicilar WHERE KullaniciAdi = @k",
+                new SQLiteParameter("@k", "mimar1"));
+
+            if (dt.Rows.Count == 0)
+            {
+                Calistir(
+                    "INSERT INTO Kullanicilar (KullaniciAdi, SifreHash, Rol, AdSoyad, Aktif) VALUES (@k, @s, 'Mimar', @a, 1)",
+                    new SQLiteParameter("@k", "mimar1"),
+                    new SQLiteParameter("@s", Sifreleme.Hashle("mimar123")),
+                    new SQLiteParameter("@a", "Test Mimar"));
+            }
+        }
     }
 }
