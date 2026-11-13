@@ -32,6 +32,7 @@
             this.dgvProjeler = new System.Windows.Forms.DataGridView();
             this.btnYenile = new System.Windows.Forms.Button();
             this.btnCikis = new System.Windows.Forms.Button();
+            this.btnAsamalar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProjeler)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,11 +76,22 @@
             this.btnCikis.UseVisualStyleBackColor = true;
             this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
+            // btnAsamalar
+            // 
+            this.btnAsamalar.Location = new System.Drawing.Point(252, 410);
+            this.btnAsamalar.Name = "btnAsamalar";
+            this.btnAsamalar.Size = new System.Drawing.Size(140, 30);
+            this.btnAsamalar.TabIndex = 4;
+            this.btnAsamalar.Text = "Aşamaları Yönet";
+            this.btnAsamalar.UseVisualStyleBackColor = true;
+            this.btnAsamalar.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MimarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAsamalar);
             this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.btnYenile);
             this.Controls.Add(this.dgvProjeler);
@@ -101,5 +113,6 @@
         private System.Windows.Forms.DataGridView dgvProjeler;
         private System.Windows.Forms.Button btnYenile;
         private System.Windows.Forms.Button btnCikis;
+        private System.Windows.Forms.Button btnAsamalar;
     }
 }

@@ -45,5 +45,17 @@ namespace ArchOffice.Formlar
         {
             Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (dgvProjeler.CurrentRow == null)
+            {
+                MessageBox.Show("Önce bir proje seçin.");
+                return;
+            }
+
+            int projeId = Convert.ToInt32(dgvProjeler.CurrentRow.Cells["Id"].Value);
+            new AsamaForm(projeId).ShowDialog();
+        }
     }
 }
