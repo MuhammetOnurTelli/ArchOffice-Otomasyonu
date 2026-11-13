@@ -69,5 +69,17 @@ namespace ArchOffice.Formlar
             int projeId = Convert.ToInt32(dgvProjeler.CurrentRow.Cells["Id"].Value);
             new GorevForm(projeId).ShowDialog();
         }
+
+        private void btnTeklif_Click(object sender, EventArgs e)
+        {
+            if (dgvProjeler.CurrentRow == null)
+            {
+                MessageBox.Show("Önce bir proje seçin.");
+                return;
+            }
+
+            int projeId = Convert.ToInt32(dgvProjeler.CurrentRow.Cells["Id"].Value);
+            new TeklifForm(projeId).ShowDialog();
+        }
     }
 }

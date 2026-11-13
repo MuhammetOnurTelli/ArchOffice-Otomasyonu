@@ -20,6 +20,7 @@ namespace ArchOffice
             Veriler.VarsayilanYoneticiEkle();
             Veriler.EksikMusterileriEkle();
             Veriler.VarsayilanMimarEkle();
+            Veriler.VarsayilanMalzemeleriEkle();
             Application.Run(new Formlar.GirisForm());
         }
     }

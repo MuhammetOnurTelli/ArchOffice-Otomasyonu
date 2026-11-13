@@ -93,6 +93,12 @@
     <Compile Include="Formlar\ProjeTalebiForm.Designer.cs">
       <DependentUpon>ProjeTalebiForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\TeklifForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\TeklifForm.Designer.cs">
+      <DependentUpon>TeklifForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\UyeOlForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\ProjeTalebiForm.resx">
       <DependentUpon>ProjeTalebiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\TeklifForm.resx">
+      <DependentUpon>TeklifForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\UyeOlForm.resx">
       <DependentUpon>UyeOlForm.cs</DependentUpon>

@@ -81,5 +81,30 @@ namespace ArchOffice
                     new SQLiteParameter("@a", "Test Mimar"));
             }
         }
+        public static void VarsayilanMalzemeleriEkle()
+        {
+            DataTable dt = Getir("SELECT COUNT(*) AS Sayi FROM Malzemeler");
+            if (Convert.ToInt32(dt.Rows[0]["Sayi"]) > 0) return;
+
+            string[,] liste =
+            {
+        { "Tuğla", "Yapı", "adet", "8" },
+        { "Çimento (50 kg)", "Yapı", "torba", "250" },
+        { "Seramik", "Kaplama", "m2", "450" },
+        { "Boya (15 lt)", "Boya", "kova", "1800" },
+        { "Parke", "Kaplama", "m2", "700" },
+        { "Alçıpan", "Yapı", "m2", "180" }
+    };
+
+            for (int i = 0; i < liste.GetLength(0); i++)
+            {
+                Calistir(
+                    "INSERT INTO Malzemeler (Ad, Kategori, Birim, BirimFiyat) VALUES (@a, @k, @b, @f)",
+                    new SQLiteParameter("@a", liste[i, 0]),
+                    new SQLiteParameter("@k", liste[i, 1]),
+                    new SQLiteParameter("@b", liste[i, 2]),
+                    new SQLiteParameter("@f", Convert.ToDouble(liste[i, 3])));
+            }
+        }
     }
 }

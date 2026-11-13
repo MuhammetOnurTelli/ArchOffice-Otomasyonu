@@ -34,6 +34,7 @@
             this.btnCikis = new System.Windows.Forms.Button();
             this.btnAsamalar = new System.Windows.Forms.Button();
             this.btnGorevler = new System.Windows.Forms.Button();
+            this.btnTeklif = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProjeler)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,11 +98,22 @@
             this.btnGorevler.UseVisualStyleBackColor = true;
             this.btnGorevler.Click += new System.EventHandler(this.btnGorevler_Click);
             // 
+            // btnTeklif
+            // 
+            this.btnTeklif.Location = new System.Drawing.Point(522, 410);
+            this.btnTeklif.Name = "btnTeklif";
+            this.btnTeklif.Size = new System.Drawing.Size(110, 30);
+            this.btnTeklif.TabIndex = 6;
+            this.btnTeklif.Text = "Teklif / Metraj";
+            this.btnTeklif.UseVisualStyleBackColor = true;
+            this.btnTeklif.Click += new System.EventHandler(this.btnTeklif_Click);
+            // 
             // MimarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnTeklif);
             this.Controls.Add(this.btnGorevler);
             this.Controls.Add(this.btnAsamalar);
             this.Controls.Add(this.btnCikis);
@@ -127,5 +139,6 @@
         private System.Windows.Forms.Button btnCikis;
         private System.Windows.Forms.Button btnAsamalar;
         private System.Windows.Forms.Button btnGorevler;
+        private System.Windows.Forms.Button btnTeklif;
     }
 }
