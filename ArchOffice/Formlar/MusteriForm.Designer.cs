@@ -65,7 +65,7 @@
             // 
             this.btnYeniProje.Location = new System.Drawing.Point(12, 430);
             this.btnYeniProje.Name = "btnYeniProje";
-            this.btnYeniProje.Size = new System.Drawing.Size(75, 23);
+            this.btnYeniProje.Size = new System.Drawing.Size(120, 30);
             this.btnYeniProje.TabIndex = 2;
             this.btnYeniProje.Text = "Yeni Proje Talebi";
             this.btnYeniProje.UseVisualStyleBackColor = true;
@@ -73,9 +73,9 @@
             // 
             // btnYenile
             // 
-            this.btnYenile.Location = new System.Drawing.Point(160, 430);
+            this.btnYenile.Location = new System.Drawing.Point(152, 430);
             this.btnYenile.Name = "btnYenile";
-            this.btnYenile.Size = new System.Drawing.Size(75, 23);
+            this.btnYenile.Size = new System.Drawing.Size(120, 30);
             this.btnYenile.TabIndex = 3;
             this.btnYenile.Text = "Yenile";
             this.btnYenile.UseVisualStyleBackColor = true;
@@ -83,9 +83,9 @@
             // 
             // btnCikis
             // 
-            this.btnCikis.Location = new System.Drawing.Point(250, 430);
+            this.btnCikis.Location = new System.Drawing.Point(292, 430);
             this.btnCikis.Name = "btnCikis";
-            this.btnCikis.Size = new System.Drawing.Size(111, 23);
+            this.btnCikis.Size = new System.Drawing.Size(120, 30);
             this.btnCikis.TabIndex = 4;
             this.btnCikis.Text = "Çıkış";
             this.btnCikis.UseVisualStyleBackColor = true;
@@ -93,9 +93,9 @@
             // 
             // btnTakip
             // 
-            this.btnTakip.Location = new System.Drawing.Point(377, 423);
+            this.btnTakip.Location = new System.Drawing.Point(432, 430);
             this.btnTakip.Name = "btnTakip";
-            this.btnTakip.Size = new System.Drawing.Size(100, 30);
+            this.btnTakip.Size = new System.Drawing.Size(120, 30);
             this.btnTakip.TabIndex = 5;
             this.btnTakip.Text = "Proje Takip";
             this.btnTakip.UseVisualStyleBackColor = true;
@@ -103,7 +103,7 @@
             // 
             // btnTalep
             // 
-            this.btnTalep.Location = new System.Drawing.Point(483, 423);
+            this.btnTalep.Location = new System.Drawing.Point(572, 430);
             this.btnTalep.Name = "btnTalep";
             this.btnTalep.Size = new System.Drawing.Size(120, 30);
             this.btnTalep.TabIndex = 6;
@@ -115,7 +115,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 471);
             this.Controls.Add(this.btnTalep);
             this.Controls.Add(this.btnTakip);
             this.Controls.Add(this.btnCikis);

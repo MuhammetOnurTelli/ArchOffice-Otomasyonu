@@ -56,14 +56,15 @@
             this.dgvProjeler.Name = "dgvProjeler";
             this.dgvProjeler.ReadOnly = true;
             this.dgvProjeler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProjeler.Size = new System.Drawing.Size(700, 350);
+            this.dgvProjeler.Size = new System.Drawing.Size(770, 350);
             this.dgvProjeler.TabIndex = 1;
+            this.dgvProjeler.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProjeler_CellContentClick);
             // 
             // btnYenile
             // 
             this.btnYenile.Location = new System.Drawing.Point(12, 410);
             this.btnYenile.Name = "btnYenile";
-            this.btnYenile.Size = new System.Drawing.Size(110, 30);
+            this.btnYenile.Size = new System.Drawing.Size(120, 30);
             this.btnYenile.TabIndex = 2;
             this.btnYenile.Text = "Yenile";
             this.btnYenile.UseVisualStyleBackColor = true;
@@ -71,9 +72,9 @@
             // 
             // btnCikis
             // 
-            this.btnCikis.Location = new System.Drawing.Point(132, 410);
+            this.btnCikis.Location = new System.Drawing.Point(142, 410);
             this.btnCikis.Name = "btnCikis";
-            this.btnCikis.Size = new System.Drawing.Size(110, 30);
+            this.btnCikis.Size = new System.Drawing.Size(120, 30);
             this.btnCikis.TabIndex = 3;
             this.btnCikis.Text = "Çıkış";
             this.btnCikis.UseVisualStyleBackColor = true;
@@ -81,9 +82,9 @@
             // 
             // btnAsamalar
             // 
-            this.btnAsamalar.Location = new System.Drawing.Point(252, 410);
+            this.btnAsamalar.Location = new System.Drawing.Point(272, 410);
             this.btnAsamalar.Name = "btnAsamalar";
-            this.btnAsamalar.Size = new System.Drawing.Size(140, 30);
+            this.btnAsamalar.Size = new System.Drawing.Size(120, 30);
             this.btnAsamalar.TabIndex = 4;
             this.btnAsamalar.Text = "Aşamaları Yönet";
             this.btnAsamalar.UseVisualStyleBackColor = true;
@@ -93,7 +94,7 @@
             // 
             this.btnGorevler.Location = new System.Drawing.Point(402, 410);
             this.btnGorevler.Name = "btnGorevler";
-            this.btnGorevler.Size = new System.Drawing.Size(110, 30);
+            this.btnGorevler.Size = new System.Drawing.Size(120, 30);
             this.btnGorevler.TabIndex = 5;
             this.btnGorevler.Text = "Görevler";
             this.btnGorevler.UseVisualStyleBackColor = true;
@@ -101,9 +102,9 @@
             // 
             // btnTeklif
             // 
-            this.btnTeklif.Location = new System.Drawing.Point(522, 410);
+            this.btnTeklif.Location = new System.Drawing.Point(532, 410);
             this.btnTeklif.Name = "btnTeklif";
-            this.btnTeklif.Size = new System.Drawing.Size(110, 30);
+            this.btnTeklif.Size = new System.Drawing.Size(120, 30);
             this.btnTeklif.TabIndex = 6;
             this.btnTeklif.Text = "Teklif / Metraj";
             this.btnTeklif.UseVisualStyleBackColor = true;
@@ -111,9 +112,9 @@
             // 
             // btnTalepler
             // 
-            this.btnTalepler.Location = new System.Drawing.Point(638, 410);
+            this.btnTalepler.Location = new System.Drawing.Point(662, 410);
             this.btnTalepler.Name = "btnTalepler";
-            this.btnTalepler.Size = new System.Drawing.Size(130, 30);
+            this.btnTalepler.Size = new System.Drawing.Size(120, 30);
             this.btnTalepler.TabIndex = 7;
             this.btnTalepler.Text = "Revizyon Talepleri";
             this.btnTalepler.UseVisualStyleBackColor = true;

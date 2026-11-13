@@ -86,5 +86,10 @@ namespace ArchOffice.Formlar
         {
             new TalepListeForm().ShowDialog();
         }
+
+        private void dgvProjeler_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

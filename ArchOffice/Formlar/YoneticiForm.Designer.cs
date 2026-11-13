@@ -63,7 +63,7 @@
             // 
             this.btnYenile.Location = new System.Drawing.Point(12, 430);
             this.btnYenile.Name = "btnYenile";
-            this.btnYenile.Size = new System.Drawing.Size(75, 23);
+            this.btnYenile.Size = new System.Drawing.Size(140, 30);
             this.btnYenile.TabIndex = 2;
             this.btnYenile.Text = "Yenile";
             this.btnYenile.UseVisualStyleBackColor = true;
@@ -71,7 +71,7 @@
             // 
             // btnAktifPasif
             // 
-            this.btnAktifPasif.Location = new System.Drawing.Point(130, 430);
+            this.btnAktifPasif.Location = new System.Drawing.Point(172, 430);
             this.btnAktifPasif.Name = "btnAktifPasif";
             this.btnAktifPasif.Size = new System.Drawing.Size(140, 30);
             this.btnAktifPasif.TabIndex = 3;
@@ -81,7 +81,7 @@
             // 
             // btnProjeler
             // 
-            this.btnProjeler.Location = new System.Drawing.Point(280, 430);
+            this.btnProjeler.Location = new System.Drawing.Point(652, 430);
             this.btnProjeler.Name = "btnProjeler";
             this.btnProjeler.Size = new System.Drawing.Size(140, 30);
             this.btnProjeler.TabIndex = 4;
@@ -91,7 +91,7 @@
             // 
             // btnRapolar
             // 
-            this.btnRapolar.Location = new System.Drawing.Point(280, 430);
+            this.btnRapolar.Location = new System.Drawing.Point(332, 430);
             this.btnRapolar.Name = "btnRapolar";
             this.btnRapolar.Size = new System.Drawing.Size(140, 30);
             this.btnRapolar.TabIndex = 5;
@@ -101,9 +101,9 @@
             // 
             // btnTalepler
             // 
-            this.btnTalepler.Location = new System.Drawing.Point(426, 430);
+            this.btnTalepler.Location = new System.Drawing.Point(492, 430);
             this.btnTalepler.Name = "btnTalepler";
-            this.btnTalepler.Size = new System.Drawing.Size(130, 30);
+            this.btnTalepler.Size = new System.Drawing.Size(140, 30);
             this.btnTalepler.TabIndex = 6;
             this.btnTalepler.Text = "Revizyon Talepleri";
             this.btnTalepler.UseVisualStyleBackColor = true;
@@ -113,7 +113,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 481);
+            this.ClientSize = new System.Drawing.Size(800, 481);
             this.Controls.Add(this.btnTalepler);
             this.Controls.Add(this.btnRapolar);
             this.Controls.Add(this.btnProjeler);
