@@ -93,6 +93,12 @@
     <Compile Include="Formlar\MusteriTakipForm.Designer.cs">
       <DependentUpon>MusteriTakipForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\MusteriTalepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\MusteriTalepForm.Designer.cs">
+      <DependentUpon>MusteriTalepForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\OdemeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\MusteriTakipForm.resx">
       <DependentUpon>MusteriTakipForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\MusteriTalepForm.resx">
+      <DependentUpon>MusteriTalepForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\OdemeForm.resx">
       <DependentUpon>OdemeForm.cs</DependentUpon>

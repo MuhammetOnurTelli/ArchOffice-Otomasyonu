@@ -60,5 +60,10 @@ namespace ArchOffice.Formlar
         {
             new MusteriTakipForm().ShowDialog();
         }
+
+        private void btnTalep_Click(object sender, EventArgs e)
+        {
+            new MusteriTalepForm().ShowDialog();
+        }
     }
 }

@@ -34,6 +34,7 @@
             this.btnYenile = new System.Windows.Forms.Button();
             this.btnCikis = new System.Windows.Forms.Button();
             this.btnTakip = new System.Windows.Forms.Button();
+            this.btnTalep = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProjeler)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,11 +101,22 @@
             this.btnTakip.UseVisualStyleBackColor = true;
             this.btnTakip.Click += new System.EventHandler(this.btnTakip_Click);
             // 
+            // btnTalep
+            // 
+            this.btnTalep.Location = new System.Drawing.Point(483, 423);
+            this.btnTalep.Name = "btnTalep";
+            this.btnTalep.Size = new System.Drawing.Size(120, 30);
+            this.btnTalep.TabIndex = 6;
+            this.btnTalep.Text = "Revizyon Talebi";
+            this.btnTalep.UseVisualStyleBackColor = true;
+            this.btnTalep.Click += new System.EventHandler(this.btnTalep_Click);
+            // 
             // MusteriForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnTalep);
             this.Controls.Add(this.btnTakip);
             this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.btnYenile);
@@ -130,5 +142,6 @@
         private System.Windows.Forms.Button btnYenile;
         private System.Windows.Forms.Button btnCikis;
         private System.Windows.Forms.Button btnTakip;
+        private System.Windows.Forms.Button btnTalep;
     }
 }
