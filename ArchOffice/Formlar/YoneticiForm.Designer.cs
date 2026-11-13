@@ -34,6 +34,7 @@
             this.btnAktifPasif = new System.Windows.Forms.Button();
             this.btnProjeler = new System.Windows.Forms.Button();
             this.btnRapolar = new System.Windows.Forms.Button();
+            this.btnTalepler = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKullanicilar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,11 +99,22 @@
             this.btnRapolar.UseVisualStyleBackColor = true;
             this.btnRapolar.Click += new System.EventHandler(this.btnRapolar_Click);
             // 
+            // btnTalepler
+            // 
+            this.btnTalepler.Location = new System.Drawing.Point(426, 430);
+            this.btnTalepler.Name = "btnTalepler";
+            this.btnTalepler.Size = new System.Drawing.Size(130, 30);
+            this.btnTalepler.TabIndex = 6;
+            this.btnTalepler.Text = "Revizyon Talepleri";
+            this.btnTalepler.UseVisualStyleBackColor = true;
+            this.btnTalepler.Click += new System.EventHandler(this.btnTalepler_Click);
+            // 
             // YoneticiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 481);
+            this.Controls.Add(this.btnTalepler);
             this.Controls.Add(this.btnRapolar);
             this.Controls.Add(this.btnProjeler);
             this.Controls.Add(this.btnAktifPasif);
@@ -128,5 +140,6 @@
         private System.Windows.Forms.Button btnAktifPasif;
         private System.Windows.Forms.Button btnProjeler;
         private System.Windows.Forms.Button btnRapolar;
+        private System.Windows.Forms.Button btnTalepler;
     }
 }

@@ -60,5 +60,10 @@ namespace ArchOffice.Formlar
         {
             new RaporForm().ShowDialog();
         }
+
+        private void btnTalepler_Click(object sender, EventArgs e)
+        {
+            new TalepListeForm().ShowDialog();
+        }
     }
 }

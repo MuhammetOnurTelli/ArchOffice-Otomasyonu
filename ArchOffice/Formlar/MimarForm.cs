@@ -81,5 +81,10 @@ namespace ArchOffice.Formlar
             int projeId = Convert.ToInt32(dgvProjeler.CurrentRow.Cells["Id"].Value);
             new TeklifForm(projeId).ShowDialog();
         }
+
+        private void btnTalepler_Click(object sender, EventArgs e)
+        {
+            new TalepListeForm().ShowDialog();
+        }
     }
 }

@@ -35,6 +35,7 @@
             this.btnAsamalar = new System.Windows.Forms.Button();
             this.btnGorevler = new System.Windows.Forms.Button();
             this.btnTeklif = new System.Windows.Forms.Button();
+            this.btnTalepler = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProjeler)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,11 +109,22 @@
             this.btnTeklif.UseVisualStyleBackColor = true;
             this.btnTeklif.Click += new System.EventHandler(this.btnTeklif_Click);
             // 
+            // btnTalepler
+            // 
+            this.btnTalepler.Location = new System.Drawing.Point(638, 410);
+            this.btnTalepler.Name = "btnTalepler";
+            this.btnTalepler.Size = new System.Drawing.Size(130, 30);
+            this.btnTalepler.TabIndex = 7;
+            this.btnTalepler.Text = "Revizyon Talepleri";
+            this.btnTalepler.UseVisualStyleBackColor = true;
+            this.btnTalepler.Click += new System.EventHandler(this.btnTalepler_Click);
+            // 
             // MimarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnTalepler);
             this.Controls.Add(this.btnTeklif);
             this.Controls.Add(this.btnGorevler);
             this.Controls.Add(this.btnAsamalar);
@@ -140,5 +152,6 @@
         private System.Windows.Forms.Button btnAsamalar;
         private System.Windows.Forms.Button btnGorevler;
         private System.Windows.Forms.Button btnTeklif;
+        private System.Windows.Forms.Button btnTalepler;
     }
 }
