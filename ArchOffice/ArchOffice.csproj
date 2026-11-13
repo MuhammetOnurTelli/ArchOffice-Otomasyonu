@@ -87,6 +87,12 @@
     <Compile Include="Formlar\MusteriForm.Designer.cs">
       <DependentUpon>MusteriForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\OdemeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\OdemeForm.Designer.cs">
+      <DependentUpon>OdemeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\ProjeTalebiForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\MusteriForm.resx">
       <DependentUpon>MusteriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\OdemeForm.resx">
+      <DependentUpon>OdemeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\ProjeTalebiForm.resx">
       <DependentUpon>ProjeTalebiForm.cs</DependentUpon>

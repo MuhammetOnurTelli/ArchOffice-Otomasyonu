@@ -35,6 +35,7 @@
             this.btnYenile = new System.Windows.Forms.Button();
             this.cmbMimar = new System.Windows.Forms.ComboBox();
             this.btnMimarAta = new System.Windows.Forms.Button();
+            this.btnOdemeler = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProjeler)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,11 +110,22 @@
             this.btnMimarAta.UseVisualStyleBackColor = true;
             this.btnMimarAta.Click += new System.EventHandler(this.btnMimarAta_Click);
             // 
+            // btnOdemeler
+            // 
+            this.btnOdemeler.Location = new System.Drawing.Point(690, 430);
+            this.btnOdemeler.Name = "btnOdemeler";
+            this.btnOdemeler.Size = new System.Drawing.Size(110, 30);
+            this.btnOdemeler.TabIndex = 7;
+            this.btnOdemeler.Text = "Ödemeler";
+            this.btnOdemeler.UseVisualStyleBackColor = true;
+            this.btnOdemeler.Click += new System.EventHandler(this.btnOdemeler_Click);
+            // 
             // YoneticiProjeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 481);
+            this.Controls.Add(this.btnOdemeler);
             this.Controls.Add(this.btnMimarAta);
             this.Controls.Add(this.cmbMimar);
             this.Controls.Add(this.btnYenile);
@@ -141,5 +153,6 @@
         private System.Windows.Forms.Button btnYenile;
         private System.Windows.Forms.ComboBox cmbMimar;
         private System.Windows.Forms.Button btnMimarAta;
+        private System.Windows.Forms.Button btnOdemeler;
     }
 }

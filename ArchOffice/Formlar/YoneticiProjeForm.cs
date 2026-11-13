@@ -103,6 +103,18 @@ namespace ArchOffice.Formlar
             MessageBox.Show("Mimar atandı.");
             ProjeleriYukle();
         }
+
+        private void btnOdemeler_Click(object sender, EventArgs e)
+        {
+            if (dgvProjeler.CurrentRow == null)
+            {
+                MessageBox.Show("Önce bir proje seçin.");
+                return;
+            }
+
+            int projeId = Convert.ToInt32(dgvProjeler.CurrentRow.Cells["Id"].Value);
+            new OdemeForm(projeId).ShowDialog();
+        }
     }
     }
 
