@@ -50,5 +50,10 @@ namespace ArchOffice.Formlar
         {
             dgvKullanicilar.DataSource = Veriler.Getir("SELECT Id, KullaniciAdi, AdSoyad, Rol, Telefon, Email, Aktif FROM Kullanicilar");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new YoneticiProjeForm().ShowDialog();
+        }
     }
 }

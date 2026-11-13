@@ -32,6 +32,7 @@
             this.lblBaslik = new System.Windows.Forms.Label();
             this.btnYenile = new System.Windows.Forms.Button();
             this.btnAktifPasif = new System.Windows.Forms.Button();
+            this.btnProjeler = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKullanicilar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,11 +77,22 @@
             this.btnAktifPasif.UseVisualStyleBackColor = true;
             this.btnAktifPasif.Click += new System.EventHandler(this.btnAktifPasif_Click);
             // 
+            // btnProjeler
+            // 
+            this.btnProjeler.Location = new System.Drawing.Point(280, 430);
+            this.btnProjeler.Name = "btnProjeler";
+            this.btnProjeler.Size = new System.Drawing.Size(140, 30);
+            this.btnProjeler.TabIndex = 4;
+            this.btnProjeler.Text = "Projeleri Yönet";
+            this.btnProjeler.UseVisualStyleBackColor = true;
+            this.btnProjeler.Click += new System.EventHandler(this.button1_Click);
+            // 
             // YoneticiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(784, 481);
+            this.Controls.Add(this.btnProjeler);
             this.Controls.Add(this.btnAktifPasif);
             this.Controls.Add(this.btnYenile);
             this.Controls.Add(this.lblBaslik);
@@ -102,5 +114,6 @@
         private System.Windows.Forms.Label lblBaslik;
         private System.Windows.Forms.Button btnYenile;
         private System.Windows.Forms.Button btnAktifPasif;
+        private System.Windows.Forms.Button btnProjeler;
     }
 }
