@@ -55,5 +55,10 @@ namespace ArchOffice.Formlar
             new ProjeTalebiForm().ShowDialog();
             ProjeleriYukle();
         }
+
+        private void btnTakip_Click(object sender, EventArgs e)
+        {
+            new MusteriTakipForm().ShowDialog();
+        }
     }
 }
